@@ -13,7 +13,7 @@ const Hero = () => {
             src={profileImg}
             alt="Profile"
             loading="lazy"
-            className="electric-border w-full h-150 object-contain rounded-xl bg-black"
+            className="electric-border w-full h-auto object-contain rounded-xl bg-black"
           />
         </div>
       </div>
