@@ -5,44 +5,73 @@ const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-gray-200 mt-20">
-      <div className="max-w-6xl mx-auto px-4 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Left */}
-        <p className="text-sm text-gray-500">
-          © {year} Abhinav. All rights reserved.
-        </p>
+    <footer className="bg-black border-t border-white/10 mt-15">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+          {/* Left */}
+          <div className="text-center md:text-left">
+            <h3 className="text-lg font-semibold text-white">Abhinav KV</h3>
+            <p className="text-sm text-neutral-500 mt-1">
+              Full Stack MERN Developer
+            </p>
+            <p className="text-xs text-neutral-600 mt-2">
+              © {year} All rights reserved.
+            </p>
+          </div>
 
-        {/* Center */}
-        <p className="text-sm text-gray-500 text-center">
-          Built with <span className="font-medium text-gray-700">React</span>
-        </p>
+          {/* Center */}
+          <div className="text-center">
+            <span className="inline-flex items-center gap-2 text-sm text-neutral-400">
+              <span className="h-2 w-2 rounded-full bg-green-500 animate-pulse" />
+              Open to opportunities
+            </span>
+            <p className="text-xs text-neutral-600 mt-2">
+              Built with React & Tailwind CSS
+            </p>
+          </div>
 
-        {/* Right */}
-        <div className="flex gap-4">
-          <a
-            href="https://github.com/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black transition"
-            aria-label="GitHub">
-            <Github size={20} />
-          </a>
+          {/* Right */}
+          <div className="flex gap-5">
+            <a
+              href="https://github.com/AbhinavKV369"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="
+                text-neutral-400
+                hover:text-white
+                transition
+                hover:scale-110
+              ">
+              <Github size={20} />
+            </a>
 
-          <a
-            href="https://linkedin.com/in/yourusername"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-gray-500 hover:text-black transition"
-            aria-label="LinkedIn">
-            <Linkedin size={20} />
-          </a>
+            <a
+             href="https://www.linkedin.com/in/abhinav-kv-3a352333b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="
+                text-neutral-400
+                hover:text-white
+                transition
+                hover:scale-110
+              ">
+              <Linkedin size={20} />
+            </a>
 
-          <a
-            href="mailto:yourmail@gmail.com"
-            className="text-gray-500 hover:text-black transition"
-            aria-label="Email">
-            <Mail size={20} />
-          </a>
+            <a
+              href="mailto:abhinavkvmayyil@gmail.com"
+              aria-label="Email"
+              className="
+                text-neutral-400
+                hover:text-white
+                transition
+                hover:scale-110
+              ">
+              <Mail size={20} />
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -38,7 +38,7 @@ const skills = [
 ];
 const SkillsSection = () => {
   return (
-    <section className=" flex items-center justify-center p-6 bg-black">
+    <section id="skills" className=" flex items-center justify-center p-6 mt-21 bg-black">
       <div
         className="
         bg-black/90

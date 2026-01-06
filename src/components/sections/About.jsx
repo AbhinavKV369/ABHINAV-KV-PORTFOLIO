@@ -47,7 +47,7 @@ const roles = [
 
 const WhatIDo = () => {
   return (
-    <section className="bg-black pt-24 px-6 lg:px-20">
+    <section id="about" className="bg-black pt-24 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-14 text-center">
@@ -59,7 +59,7 @@ const WhatIDo = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2">
           {roles.map((role) => (
             <div
               key={role.title}

@@ -6,25 +6,22 @@ import SkillsSection from "../sections/Skills";
 import ProjectsSection from "../sections/Projects";
 import Button from "../ui/Button";
 import AboutSection from "../sections/About";
+import Contact from "../sections/Contact";
 
 const Home = () => {
   return (
-    <div className="relative">
+    <div id="home" className="relative">
       {/* Download CV Button */}
       <div className="fixed top-30 right-6 z-50">
-        <Button
-          color="white"
-          text="Resume 📩"
-          href="/AbhinavKV.pdf"
-          download
-        />
+        <Button color="white" text="Resume 📩" href="/AbhinavKV.pdf" download />
       </div>
 
       <Navbar />
       <Hero />
-      <AboutSection/>
-      <ProjectsSection />
+      <AboutSection />
       <SkillsSection />
+      <ProjectsSection />
+      <Contact />
       <Footer />
     </div>
   );

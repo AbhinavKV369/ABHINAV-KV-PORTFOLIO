@@ -1,10 +1,10 @@
 import React from "react";
-import profileImg from "../../assets/Portfolio-Image.png";
+import profileImg from "../../assets/Portfolio-Image.webp";
 import Button from "../ui/Button";
 
 const Hero = () => {
   return (
-    <section className="relative w-full px-6 lg:px-16 pt-24 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+    <section id="hero" className="relative w-full px-6 lg:px-16 pt-24 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
       {/* Left Image */}
       <div className="relative w-full max-w-md lg:max-w-lg flex justify-center lg:justify-start">
         {/* Electric Border */}
@@ -35,7 +35,7 @@ const Hero = () => {
         {/* Buttons */}
         <div className="flex justify-center lg:justify-start gap-4 pt-4">
           <Button text="Contact Me" href="#contact" />
-          <Button text="See Projects" href="#contact" color="green" />
+          <Button text="See Projects" href="#projects" color="green" />
         </div>
       </div>
     </section>
