@@ -1,20 +1,33 @@
-import React from 'react'
-import Navbar from '../layouts/Navbar';
-import Footer from '../layouts/Footer';
-import Hero from '../sections/Hero';
-import SkillsSection from '../sections/Skills';
-import ProjectsSection from '../sections/Projects';
+import React from "react";
+import Navbar from "../layouts/Navbar";
+import Footer from "../layouts/Footer";
+import Hero from "../sections/Hero";
+import SkillsSection from "../sections/Skills";
+import ProjectsSection from "../sections/Projects";
+import Button from "../ui/Button";
+import AboutSection from "../sections/About";
 
 const Home = () => {
   return (
-    <>
+    <div className="relative">
+      {/* Download CV Button */}
+      <div className="fixed top-30 right-6 z-50">
+        <Button
+          color="white"
+          text="Resume 📩"
+          href="/AbhinavKV.pdf"
+          download
+        />
+      </div>
+
       <Navbar />
       <Hero />
-      <ProjectsSection/>
-      <SkillsSection/>
+      <AboutSection/>
+      <ProjectsSection />
+      <SkillsSection />
       <Footer />
-    </>
+    </div>
   );
-}
+};
 
-export default Home
+export default Home;

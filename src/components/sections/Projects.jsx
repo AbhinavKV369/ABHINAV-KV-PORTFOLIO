@@ -2,6 +2,7 @@ import React from "react";
 import Truckhaulers from "../data/project/truckhaulers.webp";
 import Knrfilmcity from "../data/project/knrfilmcity.webp";
 import Voltex from "../data/project/volt-ex.webp";
+import Button from "../ui/Button";
 
 const projects = [
   {
@@ -9,9 +10,9 @@ const projects = [
     description:
       "A production-ready eCommerce platform for truck accessories featuring a clean UI, responsive design, and optimized user experience for real-world customers.",
     image: Truckhaulers,
-    tech: ["Bootstrap", "Node.js","Express","MongoDB", "EJS"],
+    tech: ["Bootstrap", "Node.js", "Express", "MongoDB", "EJS"],
     live: "https://truckhaulers.shop/",
-    github: "#",
+    github: "https://github.com/AbhinavKV369/Truck-Haulers-MEN",
   },
   {
     title: "KNR Filmcity",
@@ -20,7 +21,7 @@ const projects = [
     image: Knrfilmcity,
     tech: ["React", "Tailwind"],
     live: "https://knrfilmcity.vercel.app/",
-    github: "#",
+    github: "https://github.com/AbhinavKV369/Movie-Booking-App-MERN-Frontend",
   },
   {
     title: "Volt-ex",
@@ -29,7 +30,7 @@ const projects = [
     image: Voltex,
     tech: ["React", "Tailwind"],
     live: "https://volt-ex-sand.vercel.app/",
-    github: "#",
+    github: "https://github.com/AbhinavKV369/E-Commerse-React",
   },
 ];
 
@@ -84,7 +85,7 @@ const ProjectsSection = () => {
                   {project.title}
                 </h3>
 
-                <p className="text-neutral-400 text-md leading-relaxed line-clamp-3">
+                <p className="text-neutral-400 text-md leading-relaxed ">
                   {project.description}
                 </p>
 
@@ -107,22 +108,24 @@ const ProjectsSection = () => {
 
                 {/* CTA */}
                 <div className="pt-2">
-                  <a
+                  <Button
+                    color="white"
+                    text="Live ⚡"
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="
-                      inline-block
-                      text-xs font-medium
-                      text-white
-                      border border-white/20
-                      px-4 py-2
-                      rounded-md
-                      hover:border-white
-                      transition
-                    ">
-                    View Live →
-                  </a>
+                  />
+                  {project.github == "#" ? (
+                    ""
+                  ) : (
+                    <Button
+                      color="green"
+                      text="Github"
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    />
+                  )}
                 </div>
               </div>
             </div>
