@@ -27,15 +27,29 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 w-full z-50">
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex mx-auto h-16 px-4 items-center justify-center">
-        <ul className="flex items-center gap-10 text-[15px] font-medium tracking-wide">
+      <nav className="hidden md:flex mx-auto h-20 px-10 items-center justify-center">
+        <ul className="flex items-center gap-14 text-[18px] font-semibold tracking-widest">
           {links.map((link) => (
-            <li key={link.name}>
+            <li key={link.name} className="relative group">
               <a
                 href={link.href}
-                className="text-white transition-colors duration-200 hover:text-purple-400">
+                className="
+            text-white
+            transition-all duration-300
+          ">
                 {link.name}
               </a>
+
+              {/* Neon underline */}
+              <span
+                className="
+            absolute -bottom-2 left-0 w-0 h-[2px]
+            bg-white
+            shadow-[0_0_10px_rgba(168,85,247,0.8)]
+            transition-all duration-300
+            group-hover:w-full
+          "
+              />
             </li>
           ))}
         </ul>

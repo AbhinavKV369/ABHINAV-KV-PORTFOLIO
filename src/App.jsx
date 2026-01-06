@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 
 import Home from './components/pages/Home';
 import Button from './components/ui/Button';
+import NeonButton from './components/ui/Button';
 
 const App = () => {
   useEffect(() => {
@@ -15,9 +16,9 @@ const App = () => {
     });
   }, []);
   return (
-   <>
-   <Home/>
-   </>
+    <>
+      <Home />
+    </>
   );
 }
 

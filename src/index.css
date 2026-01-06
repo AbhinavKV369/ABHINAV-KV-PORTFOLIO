@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Delius&display=swap");
 @import "tailwindcss";
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background: #000000;
-  color:white;
-  cursor:pointer;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight:300;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -25,20 +29,11 @@ body{
 
 .electric-border {
   position: relative;
-  background: linear-gradient(
-    120deg,
-    #7c3aed,
-    #22d3ee,
-    #a855f7,
-    #22d3ee
-  );
+  background: linear-gradient(120deg, #7c3aed, #22d3ee, #a855f7, #22d3ee);
   background-size: 300% 300%;
   animation: electricMove 4s linear infinite;
-  box-shadow:
-    0 0 20px rgba(124, 58, 237, 0.6),
-    0 0 40px rgba(34, 211, 238, 0.4);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.6), 0 0 40px rgba(34, 211, 238, 0.4);
 }
-
 
 @keyframes electricMove {
   0% {
@@ -52,6 +47,42 @@ body{
   }
 }
 
+.fire-border {
+  position: relative;
+  z-index: 0;
+  border-radius: 16px;
+}
 
+.fire-border::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg,
+      #ff6a00,
+      #ffb000,
+      #ff003c,
+      #ff6a00);
+  background-size: 400% 400%;
+  animation: fireMove 6s linear infinite;
+  z-index: -1;
+}
 
+.fire-border::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: inherit;
+  z-index: -1;
+}
 
+@keyframes fireMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 400% 50%;
+  }
+}

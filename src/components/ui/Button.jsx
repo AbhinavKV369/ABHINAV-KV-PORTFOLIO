@@ -1,21 +1,55 @@
 import React from "react";
 
-const Button = ({ text = "Contact Me" }) => {
+const blackNeonStyles = {
+  blue: `
+    bg-black
+    text-cyan-300
+    border border-cyan-500/40
+    shadow-[0_0_15px_rgba(34,211,238,0.5)]
+    hover:shadow-[0_0_35px_rgba(34,211,238,0.9)]
+    hover:border-cyan-400
+  `,
+  purple: `
+    bg-black
+    text-purple-300
+    border border-purple-500/40
+    shadow-[0_0_15px_rgba(168,85,247,0.5)]
+    hover:shadow-[0_0_35px_rgba(168,85,247,0.9)]
+    hover:border-purple-400
+  `,
+  green: `
+    bg-black
+    text-emerald-300
+    border border-emerald-500/40
+    shadow-[0_0_15px_rgba(52,211,153,0.5)]
+    hover:shadow-[0_0_35px_rgba(52,211,153,0.9)]
+    hover:border-emerald-400
+  `,
+  pink: `
+    bg-black
+    text-pink-300
+    border border-pink-500/40
+    shadow-[0_0_15px_rgba(244,114,182,0.5)]
+    hover:shadow-[0_0_35px_rgba(244,114,182,0.9)]
+    hover:border-pink-400
+  `,
+};
+
+const Button = ({ text = "Explore", color = "blue", onClick }) => {
   return (
     <button
-      className="
-        px-7 py-3.5
-        text-sm font-medium tracking-wide
-        text-neutral-100
-        bg-black
-        border border-neutral-700
+      onClick={onClick}
+      className={`
+        px-3 py-3 mx-1
         rounded-lg
-        transition-all duration-300 ease-out
-        hover:border-neutral-400
-        hover:bg-neutral-900
+        bg-black
+        font-semibold
+        tracking-wider
+        transition-all duration-300 
         focus:outline-none
-        focus:ring-2 focus:ring-neutral-600/40
-      ">
+         focus:ring-white/10
+        ${blackNeonStyles[color]}
+      `}>
       {text}
     </button>
   );
