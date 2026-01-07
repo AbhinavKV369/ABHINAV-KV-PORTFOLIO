@@ -45,7 +45,7 @@ const roles = [
   },
 ];
 
-const WhatIDo = () => {
+const AboutSection = () => {
   return (
     <section id="about" className="bg-black pt-24 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -110,4 +110,4 @@ const WhatIDo = () => {
   );
 };
 
-export default WhatIDo;
+export default AboutSection;

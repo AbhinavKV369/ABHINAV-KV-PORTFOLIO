@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
 import profileImg from "../../assets/Portfolio-Image.webp";
 import Button from "../ui/Button";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: "ease-in-out", // easing function
+      once: true, // animation happens only once while scrolling down
+      mirror: false, // repeat animation on scroll up
+    });
+  }, []);
   return (
-    <section id="hero" className="relative w-full px-6 lg:px-16 pt-24 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+    <section
+      id="hero"
+      className="relative w-full px-6 lg:px-16 pt-24 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
       {/* Left Image */}
       <div className="relative w-full max-w-md lg:max-w-lg flex justify-center lg:justify-start">
         {/* Electric Border */}
@@ -12,7 +23,8 @@ const Hero = () => {
           <img
             src={profileImg}
             alt="Profile"
-            loading="lazy"
+            fetchPriority="high"
+            decoding="async"
             className="electric-border w-full h-auto object-contain rounded-xl bg-black"
           />
         </div>

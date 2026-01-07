@@ -2,33 +2,35 @@ import React from "react";
 import Button from "../ui/Button";
 import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
+const className="w-8 h-8 text-white group-hover:scale-110 transition"
+
 const contactActions = [
   {
     label: "Email Me",
     value: "abhinavkvmayyil@gmail.com",
     href: "mailto:abhinavkvmayyil@gmail.com",
-    icon: Mail,
+    icon: <Mail className={className} />,
     color: "cyan",
   },
   {
     label: "WhatsApp",
     value: "+91 XXXXX X6062",
     href: "https://wa.me/917558916062",
-    icon: Phone,
+    icon: <Phone className={className} />,
     color: "green",
   },
   {
     label: "GitHub",
     value: "github.com/AbhinavKV369",
     href: "https://github.com/AbhinavKV369",
-    icon: Github,
+    icon: <Github className={className} />,
     color: "purple",
   },
   {
     label: "LinkedIn",
     value: "linkedin.com/in/abhinavkv",
     href: "https://www.linkedin.com/in/abhinav-kv-3a352333b/",
-    icon: Linkedin,
+    icon: <Linkedin className={className} />,
     color: "blue",
   },
 ];
@@ -47,7 +49,7 @@ const Contact = () => {
 
         {/* Cards */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-          {contactActions.map(({ label, value, href, icon: Icon }) => (
+          {contactActions.map(({ label, value, href, icon }) => (
             <a
               key={label}
               href={href}
@@ -66,7 +68,7 @@ const Contact = () => {
               "
             >
               <div className="flex justify-center mb-4">
-                <Icon className="w-8 h-8 text-white group-hover:scale-110 transition" />
+               {icon}
               </div>
 
               <h3 className="text-lg font-semibold text-white">{label}</h3>

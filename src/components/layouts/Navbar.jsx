@@ -13,7 +13,6 @@ const Navbar = () => {
     { name: "Contact", href: "#contact", icon: <Mail /> },
   ];
 
-  // Close menu on click outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
