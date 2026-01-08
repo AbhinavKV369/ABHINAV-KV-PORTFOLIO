@@ -1,5 +1,3 @@
-import React from "react";
-import AOS from "aos";
 import profileImg from "../../assets/Portfolio-Image.webp";
 import Button from "../ui/Button";
 
