@@ -1,17 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
 import AOS from "aos";
 import profileImg from "../../assets/Portfolio-Image.webp";
 import Button from "../ui/Button";
 
 const Hero = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      easing: "ease-in-out", // easing function
-      once: true, // animation happens only once while scrolling down
-      mirror: false, // repeat animation on scroll up
-    });
-  }, []);
+
   return (
     <section
       id="hero"
@@ -32,8 +25,7 @@ const Hero = () => {
 
       {/* Right Text */}
       <div
-        className="text-center lg:text-left max-w-lg space-y-4"
-        data-aos="fade-left">
+        className="text-center lg:text-left max-w-lg space-y-4">
         <div className="text-center lg:text-left max-w-lg space-y-4">
           <p className="text-xl text-gray-300 font-extrabold">Hi, I’m</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">

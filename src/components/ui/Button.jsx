@@ -53,4 +53,4 @@ const Button = ({ text = "Explore",color = "blue",href, onClick, ...rest}) => {
   );
 };
 
-export default Button;
+export default React.memo(Button);

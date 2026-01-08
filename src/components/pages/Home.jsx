@@ -20,7 +20,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <AboutSection />
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense fallback={<h1 className="text-center">Loading...</h1>}>
         <SkillsSection />
         <ProjectsSection />
         <Contact />
