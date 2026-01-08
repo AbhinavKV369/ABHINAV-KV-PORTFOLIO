@@ -1,5 +1,3 @@
-import React from "react";
-import AOS from "aos";
 import profileImg from "../../assets/Portfolio-Image.webp";
 import Button from "../ui/Button";
 
@@ -25,7 +23,7 @@ const Hero = () => {
 
       {/* Right Text */}
       <div
-        className="text-center lg:text-left max-w-lg space-y-4">
+        className="text-center lg:text-left max-w-lg space-y-4 ">
         <div className="text-center lg:text-left max-w-lg space-y-4">
           <p className="text-xl text-gray-300 font-extrabold">Hi, I’m</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">

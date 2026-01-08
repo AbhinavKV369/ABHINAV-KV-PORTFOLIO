@@ -1,5 +1,3 @@
-import React from "react";
-import Button from "../ui/Button";
 import { Mail, Phone, Github, Linkedin } from "lucide-react";
 
 const className="w-8 h-8 text-white group-hover:scale-110 transition"
