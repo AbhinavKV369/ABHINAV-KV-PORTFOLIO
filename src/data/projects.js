@@ -1,6 +1,6 @@
- import Truckhaulers from "../../assets/projects/truckhaulers.webp";
- import Knrfilmcity from "../../assets/projects/knrfilmcity.webp";
- import Voltex from "../../assets/projects/volt-ex.webp";
+ import Truckhaulers from "../assets/projects/truckhaulers.webp";
+ import Knrfilmcity from "../assets/projects/knrfilmcity.webp";
+ import Voltex from "../assets/projects/volt-ex.webp";
 
 export const projects =  [
   {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "../ui/Button";
-import { projects } from "../data/projects";
+import { projects } from "../../data/projects";
 
 
 const ProjectsSection = React.memo(() => {
