@@ -4,7 +4,7 @@ import Footer from "../components/layouts/Footer";
 import Button from "../components/ui/Button";
 import Hero from "../components/sections/Hero";
 import AboutSection from "../components/sections/About";
-import ChatWidget from "../components/chat/chatWidget";
+import ChatWidget from "../components/chat/ChatWidget";
 
 const SkillsSection = lazy(() => import("../components/sections/Skills"));
 const ProjectsSection = lazy(() => import("../components/sections/Projects"));
