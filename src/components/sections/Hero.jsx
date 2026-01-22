@@ -2,7 +2,6 @@ import profileImg from "../../assets/Portfolio-Image.webp";
 import Button from "../ui/Button";
 
 const Hero = () => {
-
   return (
     <section
       id="hero"
@@ -22,8 +21,7 @@ const Hero = () => {
       </div>
 
       {/* Right Text */}
-      <div
-        className="text-center lg:text-left max-w-lg space-y-4">
+      <div className="text-center lg:text-left max-w-lg space-y-4 ">
         <div className="text-center lg:text-left max-w-lg space-y-4">
           <p className="text-xl text-gray-300 font-extrabold">Hi, I’m</p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">
@@ -38,6 +36,12 @@ const Hero = () => {
         <div className="flex justify-center lg:justify-start gap-4 pt-4">
           <Button text="Contact Me" href="#contact" />
           <Button text="See Projects" href="#projects" color="green" />
+          <Button
+            color="white"
+            text="Resume 📩"
+            href="/AbhinavKV.pdf"
+            download
+          />
         </div>
       </div>
     </section>

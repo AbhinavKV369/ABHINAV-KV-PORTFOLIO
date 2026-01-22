@@ -1,7 +1,13 @@
+<<<<<<< HEAD:src/components/data/projects.js
 import Truckhaulers from "../../assets/projects/truckhaulers.webp";
 import Portfolio from "../../assets/projects/portfolio.webp";
 import Knrfilmcity from "../../assets/projects/knrfilmcity.webp";
 import Voltex from "../../assets/projects/volt-ex.webp";
+=======
+ import Truckhaulers from "../assets/projects/truckhaulers.webp";
+ import Knrfilmcity from "../assets/projects/knrfilmcity.webp";
+ import Voltex from "../assets/projects/volt-ex.webp";
+>>>>>>> f2673a2f605bb8284e285201522b8167b6bb6720:src/data/projects.js
 
 export const projects = [
   {
