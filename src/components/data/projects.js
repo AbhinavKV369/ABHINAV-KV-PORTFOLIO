@@ -1,8 +1,9 @@
- import Truckhaulers from "../../assets/projects/truckhaulers.webp";
- import Knrfilmcity from "../../assets/projects/knrfilmcity.webp";
- import Voltex from "../../assets/projects/volt-ex.webp";
+import Truckhaulers from "../../assets/projects/truckhaulers.webp";
+import Portfolio from "../../assets/projects/portfolio.webp";
+import Knrfilmcity from "../../assets/projects/knrfilmcity.webp";
+import Voltex from "../../assets/projects/volt-ex.webp";
 
-export const projects =  [
+export const projects = [
   {
     title: "Truck Haulers",
     description:
@@ -11,6 +12,15 @@ export const projects =  [
     tech: ["Bootstrap", "Node.js", "Express", "MongoDB", "EJS"],
     live: "https://truckhaulers.shop/",
     github: "https://github.com/AbhinavKV369/Truck-Haulers-MEN",
+  },
+  {
+    title: "MY PORTFOLIO",
+    description:
+      "A modern personal portfolio website showcasing my skills, projects, and experience as a MERN Stack Developer, built with a clean UI, responsive design, and smooth user interactions.",
+    image: Portfolio,
+    tech: ["React", "Tailwind", "Nodejs"],
+    live: "https://abhinavkvdev.vercel.app/",
+    github: "https://github.com/AbhinavKV369/ABHINAV-KV-PORTFOLIO",
   },
   {
     title: "KNR Filmcity",

@@ -1,16 +1,58 @@
-# React + Vite
+# 🚀 Abhinav KV – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio website showcasing my skills, projects, and experience as a **MERN Stack Developer**.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** https://abhinavkvdev.vercel.app/  
+📂 **GitHub Repo:** https://github.com/AbhinavKV369/ABHINAV-KV-PORTFOLIO
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio website is designed to present my professional profile, technical skills, and featured projects in a clean and visually engaging manner.  
+It focuses on **modern UI design**, **responsive layouts**, and **smooth user experience**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- Clean and modern UI design
+- Fully responsive (mobile, tablet & desktop)
+- Projects showcase with live & GitHub links
+- Skills & tech stack section
+- Smooth navigation and animations
+- Optimized performance
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React.js
+- Tailwind CSS
+- JavaScript (ES6+)
+
+### Backend (if applicable / future-ready)
+- Node.js
+
+### Tools & Deployment
+- Git & GitHub
+- Vercel
+
+---
+
+## 📂 Project Structure
+
+```bash
+ABHINAV-KV-PORTFOLIO/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── assets/
+│   ├── data/
+│   └── App.jsx
+│
+├── public/
+├── package.json
+└── README.md
