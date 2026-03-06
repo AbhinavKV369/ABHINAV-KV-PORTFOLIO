@@ -9,11 +9,8 @@ export const useChat = () => {
     if (!text?.trim()) return;
     setMessages((prev) => [...prev, { role: "user", text }]);
     setLoading(true);
-
     try {
-
       const reply = await sendMessageToAI(text);
-
       if (!reply || typeof reply !== "string") {
         throw new Error("Invalid response from AI");
       }

@@ -10,7 +10,7 @@ body {
   color: white;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  font-weight:300;
+  font-weight: 300;
   font-style: normal;
 }
 
@@ -39,9 +39,11 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
